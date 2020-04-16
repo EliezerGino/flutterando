@@ -1,4 +1,4 @@
-# fluterando
+# flutterando
 
 A new Flutter project.
 
