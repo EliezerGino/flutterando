@@ -11,23 +11,43 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: HomeWidget(),
+          body: Container(
+            width: double.infinity,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              ButtonIcon(),
+              ButtonText()
+            ],
+        ),
+          )
       ),
     );
   }
 }
 
-class HomeWidget extends StatelessWidget {
+class ButtonIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        height: 50,
-        width: 300,
-        color: Colors.blue,
-        alignment: Alignment.center,
-        child: Icon(Icons.add_a_photo, color: Colors.white,)
-      ),
+    return Container(
+      width: 300,
+      height: 50,
+      color: Colors.red,
+      child: Icon(Icons.add, color: Colors.white),
+    );
+  }
+}
+
+class ButtonText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 300,
+      height: 50,
+      color: Colors.blue,
+      alignment: Alignment.center,
+      child: Text('Toque aqui', style: TextStyle(color: Colors.white)),
     );
   }
 }
