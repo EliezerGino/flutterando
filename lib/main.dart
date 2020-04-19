@@ -23,10 +23,10 @@ class HomeWidget extends StatelessWidget {
     return Center(
       child: Container(
         height: 50,
-        width: 150,
+        width: 300,
         color: Colors.blue,
         alignment: Alignment.center,
-        child: Text('Meu primeiro texto', textAlign: TextAlign.center ,style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18.00),),
+        child: Icon(Icons.add_a_photo, color: Colors.white,)
       ),
     );
   }
