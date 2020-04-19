@@ -20,8 +20,14 @@ class MyApp extends StatelessWidget {
 class HomeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Center(
+      child: Container(
+        height: 50,
+        width: 150,
+        color: Colors.blue,
+        alignment: Alignment.center,
+        child: Text('Meu primeiro texto', textAlign: TextAlign.center ,style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18.00),),
+      ),
     );
   }
 }
